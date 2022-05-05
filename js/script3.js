@@ -150,7 +150,7 @@ var next=document.getElementById("next");
 var prev=document.getElementById("prev");
 var prevImg=document.getElementById("prev").children;
 var nextImg=document.getElementById("next").children;
-var count =document.getElementById("count");
+var count =document.getElementById("count");    
 var submit=document.getElementById("submit");
 // var cmark=document.querySelector("mark");
 var mark=document.getElementById("mark");
@@ -325,6 +325,10 @@ function addQ(){
         }, 1000)
     }
 
+    // window.addEventListener("load",function(){
+    //     window.location.replace("index.html")
+
+    // })
 
 
     // Window.addEventListener("keyup",function(e){

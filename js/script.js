@@ -20,7 +20,7 @@ logBtn.addEventListener("click",function(){
     else{
         // log.style.display="none"
         // ques.style.display="block"
-        window.location.assign("index2.html")
+        window.location.replace("index2.html")
 
     }
 })

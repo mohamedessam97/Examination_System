@@ -16,6 +16,8 @@ inpFirst.addEventListener("change",function(e){
     if (re.test(e.target.value)||e.target.value==""){
         span.textContent="";
         fName =e.target.value;
+        this.style.border="0px solid red"
+
     }else{
         fName=undefined;
         this.style.border="1px solid red"
@@ -85,22 +87,30 @@ inpConfirm.addEventListener("change",function(e){
 })
 
 signBtn.addEventListener("click",function(){
+    inpFirst.style.border="0px solid red"
+    inpLast.style.border="0px solid red"
+    inpEmail.style.border="0px solid red"
+    inpPass.style.border="0px solid red"
+    inpConfirm.style.border="0px solid red"
+
+
+
     if(fName==undefined){
         // inpFirst.nextElementSibling.nextElementSibling.nextElementSibling.textContent="Requird";
         inpFirst.style.border="1px solid red"
-    }
+    }else
     if(lName==undefined){
         // inpLast.nextElementSibling.nextElementSibling.textContent="Requird";
         inpLast.style.border="1px solid red"
-    }
+    }else
     if(email==undefined){ 
         // inpEmail.nextElementSibling.nextElementSibling.textContent="Requird";
         inpEmail.style.border="1px solid red"
-    }
+    }else
     if(pass==undefined){
         // inpPass.nextElementSibling.nextElementSibling.textContent="Requird";
         inpPass.style.border="1px solid red"
-    }
+    }else
     if(Confirm==undefined){
         // inpConfirm.nextElementSibling.nextElementSibling.textContent="Requird";
         inpConfirm.style.border="1px solid red"
@@ -110,7 +120,7 @@ signBtn.addEventListener("click",function(){
         localStorage.setItem("Lname",lName);
         localStorage.setItem("email",email);
         localStorage.setItem("password",pass);
-        location.replace("Exam.html")
+        location.replace("index.html")
         }else{
         alert("The password doesn't match");
         }

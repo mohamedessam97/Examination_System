@@ -8,15 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="log">
+    <div id="regs">
         <div class="form">
-            <h1>Log In</h1>
+            <h1>Sign Up</h1>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name"><br>
+            <span class="err"></span><br>
             <input type="email" placeholder="Email address"><br>
             <span class="err"></span><br>
             <input type="password" placeholder="Password"><br>
-            <span></span><br>
-            <span id="login">Log in</span>
-            <span id="new" onclick="location.assign('index.html')">Sign Up</span>
+            <span class="err"></span><br>
+            <input type="password" placeholder="Confirm"><br>
+            <span class="err conf"></span><br>   
+            <span id="sign">Sign Up</span>
+            <span id="login" onclick="location.assign('index.html')">Log in</span>
         </div>
         <div class="decl">
             <div>
@@ -27,9 +32,6 @@
             </div>
         </div>
     </div>
-
-
-    
-    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
 </body>
 </html>
